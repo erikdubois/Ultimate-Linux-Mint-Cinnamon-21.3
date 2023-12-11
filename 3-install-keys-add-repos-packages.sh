@@ -60,10 +60,10 @@ sudo add-apt-repository ppa:aslatter/ppa -y
 sudo apt update
 
 #Installed via keys and repo add
-sudo apt install -y vivaldi-stable
-sudo apt install -y google-chrome-stable
-sudo apt install -y brave-browser
-sudo apt install -y code
+#sudo apt install -y vivaldi-stable
+#sudo apt install -y google-chrome-stable
+#sudo apt install -y brave-browser
+#sudo apt install -y code
 sudo apt install -y alacritty
 
 echo "################################################################"
