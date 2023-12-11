@@ -11,8 +11,6 @@
 #
 ##################################################################################################################
 
-sudo apt install -y build-essential libimlib2-dev libx11-dev libxft-dev libxinerama-dev libfreetype6-dev libfontconfig1-dev
-
 sudo apt install -y acpi
 sudo apt install -y arandr
 sudo apt install -y autorandr
@@ -34,9 +32,13 @@ sudo apt install -y ripgrep
 sudo apt install -y rofi
 sudo apt install -y suckless-tools
 sudo apt install -y sxhkd
+sudo apt install -y thunar
+sudo apt install -y thunar-archive-plugin
 sudo apt install -y variety
 sudo apt install -y xfce4-taskmanager
+sudo apt install -y xfce4-terminal
+sudo apt install -y silversearcher-ag
 
 echo "################################################################"
-echo "#################    chadwm installed     ######################"
+echo "#################    chadwm extras installed   #################"
 echo "################################################################"

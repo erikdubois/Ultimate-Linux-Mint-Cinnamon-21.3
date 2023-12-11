@@ -11,25 +11,17 @@
 #
 ##################################################################################################################
 
-sudo apt upgrade -y
+# not working
 
-sudo apt install -y chromium
-sudo apt install -y dconf-editor
-sudo apt install -y flameshot
-sudo apt install -y gimp
-sudo apt install -y git
-sudo apt install -y inkscape
-sudo apt install -y meld
-sudo apt install -y obs-studio
-sudo apt install -y qbittorrent
-sudo apt install -y rxvt-unicode
-sudo apt install -y simplescreenrecorder
-sudo apt install -y spotify-client
-sudo apt install -y sublime-text
-sudo apt install -y telegram-desktop
-sudo apt install -y virtualbox
-sudo apt install -y vlc
+sudo apt install -y samba
+
+sudo mv /etc/samba/smb.conf /etc/samba/samba.conf.bak
+sudo wget https://raw.githubusercontent.com/arcolinux/arcolinux-system-config/master/etc/samba/smb.conf.arcolinux -O /etc/samba/smb.conf
+
+echo "remove the semi-colons of the last lines"
+
+mkdir $HOME/SHARED
 
 echo "################################################################"
-echo "###################    Installation Done  ######################"
+echo "###################    samba installed     ######################"
 echo "################################################################"
