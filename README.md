@@ -1,4 +1,4 @@
-# Linux Mint Cinnamon 21.2
+# Linux Mint Cinnamon 21.3
 
 Check the Linux Mint website
 
