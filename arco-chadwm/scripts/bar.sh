@@ -11,7 +11,7 @@ interval=0
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
-  printf "^c$white^  ^b$black^ CPU"
+  printf "^c$white^  ^b$black^ CPU"
   printf "^c$white^ ^b$black^ $cpu_val"
 }
 
@@ -21,24 +21,24 @@ pkg_updates() {
   # updates=$({ timeout 20 aptitude search '~U' 2>/dev/null || true; } | wc -l)  # apt (ubuntu, debian etc)
 
   if [ -z "$updates" ]; then
-    printf "  ^c$green^     Fully Updated"
+    printf "  ^c$green^    Fully Updated"
   else
-    printf "  ^c$green^     $updates"" updates"
+    printf "  ^c$green^    $updates"" updates"
   fi
 }
 
 battery() {
   get_capacity="$(cat /sys/class/power_supply/BAT1/capacity)"
-  printf "^c$blue^   $get_capacity"
+  printf "^c$blue^  $get_capacity"
 }
 
 brightness() {
-  printf "^c$red^   "
+  printf "^c$red^  "
   printf "^c$red^%.0f\n" $(cat /sys/class/backlight/*/brightness)
 }
 
 mem() {
-  printf "^c$blue^^b$black^  "
+  printf "^c$blue^^b$black^ "
   printf "^c$blue^ $(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g)"
 }
 
