@@ -31,11 +31,11 @@ else
 fi
 cnflayout=`cat ${CNFR} | grep 'USE_ICON' | cut -d'=' -f2`
 if [[ "$cnflayout" == 'NO' ]]; then
-	yes=' Yes'
-	no=' No'
+	yes='Yes'
+	no='No'
 else
-	yes=''
-	no=''
+	yes='Yes'
+	no='No'
 fi
 
 # Rofi CMD
