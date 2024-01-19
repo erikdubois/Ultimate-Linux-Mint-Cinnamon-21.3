@@ -74,11 +74,11 @@ super + c
 #super + h
 #    urxvt 'htop task manager' -e htop
 
-#archlinux-logout
-#super + x
-#    archlinux-logout
+#powermenu
+super + x
+    ~/.config/arco-chadwm/powermenu/powermenu
 
-#archlinux-logout
+#powermenu
 super + shift + x
     ~/.config/arco-chadwm/powermenu/powermenu
 
